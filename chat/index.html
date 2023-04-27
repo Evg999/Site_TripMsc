@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Чат</title>
+</head>
+<body>
+    <div class="chat">
+        <div class="chat-user user-tutor"></div>
+        <div class="chat-message"></div>
+        <div class="chat-user user-student"></div>
+    </div>
+
+    <template id="tmpl-card">
+        <div class="card">
+            <div class="card-image" style="background-image: url(${pic}) ;"></div>
+            <div class="card-description">
+                <div class="card-description-name">${name}</div>
+                <div class="card-description-text">Возраст: ${age}</div>
+                <div class="card-description-text">Email: ${email}</div>
+                <div class="card-description-text">Професия: ${profession}</div>
+            </div>
+        </div>
+    </template>
+
+    <template id="tmpl-shablone">
+        <div class="box flex-box">
+            <div class="message ${dope_class}"> 
+                <div class="is-bold">
+                    ${names}
+                </div>
+                <div class="flex-box flex-vertical-bottom">
+                    <div>
+                        ${texts}
+                    </div>
+                    <div class="ghost to-right margin-left">
+                        ${format_time}
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </template>
+
+    <template id="form">
+        <textarea name="message"></textarea>
+            <input type="submit" value="отправить сообщение">
+            
+            <input type="hidden" name="role" value="${this.role_id}">
+    </template>
+
+    <script src="chat.js"></script>
+</body>
+</html>

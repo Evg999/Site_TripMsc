@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chat{
+    display: flex;
+    min-height: 100vh;
+}
+.chat-user{
+    width: 30%;
+    background-color: lightblue;
+    border: 2px solid gray;
+    box-sizing: border-box;
+}
+.chat-message{
+    width: 40%;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: darkblue;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-image {
+    width: 90px;
+    min-height: 90px;
+    background-size: cover;
+    background-position: center center;
+    border: 4px solid orange;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.card-description-name {
+    background: orange;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.card-description-text {
+    color: white;
+}
+
+form{
+    width: 100%;
+    margin: 10px 0;
+}
+textarea,input{
+    width: 100%;
+    border: 2px solid orange;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.message{
+    width: auto;
+    max-width: 400px;
+    background: cyan;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+.box{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* что бы был в самым правом углу */
+.to-right{
+    margin: 0 0 0 auto;
+}
+
+.flex-box{
+    display: flex;
+}
+.is-bold{
+    font-weight: bold;
+}
+.ghost{
+    opacity: 0.5;
+}
+.flex-vertical-bottom{
+    align-items: flex-end;
+}
+.margin-left{
+    margin-left: 10px;
+}
